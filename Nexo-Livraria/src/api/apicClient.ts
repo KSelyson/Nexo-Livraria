@@ -3,7 +3,7 @@ import axios from 'axios';
 // Cria uma instância customizada do Axios
 const apiClient = axios.create({
   // Usa o proxy /api configurado no vite.config.ts
-  baseURL: '/api', 
+  baseURL: import.meta.env.VITE_API_URL || 'http://localhost:5000/api',
   headers: {
     'Content-Type': 'application/json',
   },
