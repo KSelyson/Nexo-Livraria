@@ -8,8 +8,6 @@ import Footer from '../footer/footer';
 
 type ActiveTab = 'pedidos' | 'configuracoes' | 'desejos'; 
 
-const CARRINHO_STORAGE_KEY = 'nexoLivrariaCarrinho';
-
 // 1. Interface para tipar as informações do usuário salvas no localStorage
 interface UserInfo {
     nome: string;

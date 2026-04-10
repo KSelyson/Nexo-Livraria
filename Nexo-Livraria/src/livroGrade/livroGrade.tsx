@@ -11,7 +11,7 @@ const LivroGrade: React.FC<LivroGradeProps> = ({ livros }) => {
     return (
         <div className="livro-grade-layout">
             {livros.map(livro => (
-                <LivroCard key={livro.id} livro={livro} />
+                <LivroCard key={livro._id} livro={livro} />
             ))}
         </div>
     );
