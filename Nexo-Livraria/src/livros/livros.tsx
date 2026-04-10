@@ -4,6 +4,7 @@ import FiltroLateral from '../filtroLateral/filtroLateral';
 import Navbar from '../navbar/navbar';
 import { LIVROS_SIMULADOS } from '../livrosInterface/livrosInterface';
 import './livros.css'
+import Footer from '../footer/footer';
 
 const Livros: React.FC = () => {
     const [livrosParaExibir] = useState(LIVROS_SIMULADOS); 
@@ -21,6 +22,7 @@ const Livros: React.FC = () => {
                     <LivroGrade livros={livrosParaExibir} />
                 </main>
             </div>
+            <Footer />
         </div>
     );
 }

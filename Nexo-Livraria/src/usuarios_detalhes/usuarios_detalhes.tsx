@@ -1,3 +1,4 @@
+import Footer from '../footer/footer'
 import Navbar from '../navbar/navbar'
 import './usuarios_detalhes.css'
 
@@ -6,6 +7,7 @@ function UsuariosDetalhes() {
     <div>
       <Navbar />
       usuarios_detalhes
+      <Footer />
     </div>
   )
 }

@@ -1,11 +1,13 @@
 import { useState, useEffect } from 'react';
 import Navbar from '../navbar/navbar';
+import Footer from '../footer/footer';
 import apiClient from '../api/apicClient'; 
 import './home.css';
 
 // 1. Importar o componente LivroCard e a interface
 import LivroCard from '../livroCard/livroCard';
 import type { Livro } from '../livrosInterface/livrosInterface'; 
+
 
 const HomePage = () => {
   // 2. Estados para armazenar os dados e o status da busca
@@ -70,6 +72,7 @@ const HomePage = () => {
           </div>
         </section>
       </div>
+      <Footer />
     </div>
   );
 };

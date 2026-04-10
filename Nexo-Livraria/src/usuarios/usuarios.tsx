@@ -4,6 +4,7 @@ import {FaUserCircle, FaBoxOpen, FaHeart, FaCog, FaSignOutAlt,} from 'react-icon
 import './usuarios.css';
 import { useNavigate } from 'react-router-dom';
 import { useCarrinho } from '../context/CarrinhoContext'; 
+import Footer from '../footer/footer';
 
 type ActiveTab = 'pedidos' | 'configuracoes' | 'desejos'; 
 
@@ -151,6 +152,7 @@ function Usuarios() {
                     {renderCurrentContent()}
                 </div>
             </div>
+            <Footer />
         </div>
     );
 }
